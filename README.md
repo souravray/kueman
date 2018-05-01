@@ -19,4 +19,4 @@ kueman -i job/payload/json/file/path -j job-name
 
 ### Demo
 
-[![solarized dualmode](https://github.com/souravray/kueman/raw/master/screen_shots/demo.gif)]
+[![demo](https://raw.githubusercontent.com/souravray/kueman/master/screen_shots/demo.gif)]
