@@ -1,11 +1,11 @@
 # kueman
 
-### install
+### How to install?
 ```
 npm i -g kueman
 ```
 
-### run
+### How to use?
 ```
 kueman -i job/payload/json/file/path -j job-name
 
@@ -16,3 +16,7 @@ kueman -i job/payload/json/file/path -j job-name
 # -a redis passowrd
 
 ```
+
+### Demo
+
+[![solarized dualmode](https://github.com/souravray/kueman/raw/master/screen_shots/demo.gif)]

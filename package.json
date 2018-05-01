@@ -1,6 +1,6 @@
 {
   "name": "kueman",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "CLI client to post job(s) in `Kue` priority queue",
   "main": "index.js",
   "bin": {
