@@ -2,7 +2,7 @@
 
 ### install
 ```
-npm i -G kueman
+npm i -g kueman
 ```
 
 ### run
