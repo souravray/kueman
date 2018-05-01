@@ -1,0 +1,21 @@
+{
+  "name": "kueman",
+  "version": "0.0.1",
+  "description": "CLI client to post job(s) in `Kue` priority queue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Kue",
+    "Test",
+    "Client",
+    "CLI"
+  ],
+  "author": "Sourav Ray",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "kue": "^0.11.6"
+  }
+}
