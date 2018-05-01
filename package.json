@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "CLI client to post job(s) in `Kue` priority queue",
   "main": "index.js",
-  "scripts": {
+  "bin": {
     "kueman": "index.js"
   },
   "keywords": [
