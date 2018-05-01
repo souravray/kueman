@@ -19,4 +19,4 @@ kueman -i job/payload/json/file/path -j job-name
 
 ### Demo
 
-[![demo](https://raw.githubusercontent.com/souravray/kueman/master/screen_shots/demo.gif)]
+![demo](https://media.giphy.com/media/4003diaf1fxe98pYt5/giphy.gif)
