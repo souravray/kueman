@@ -1,5 +1,7 @@
 # kueman
 
+![demo](https://media.giphy.com/media/4003diaf1fxe98pYt5/giphy.gif)
+
 ### How to install?
 ```
 npm i -g kueman
@@ -17,6 +19,4 @@ kueman -i job/payload/json/file/path -j job-name
 
 ```
 
-### Demo
 
-![demo](https://media.giphy.com/media/4003diaf1fxe98pYt5/giphy.gif)
