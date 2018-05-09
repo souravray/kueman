@@ -3,6 +3,7 @@
 const program = require('commander');
 const fs = require('fs');
 const kue  = require('kue');
+const { JobBuilder } = require('./src/job');
 
 var assert = require('assert');
 assert.throws(
@@ -58,12 +59,21 @@ if(program.queue !== '') {
 const queue = kue.createQueue(options);
 
 // create post method
+const jb = JobBuilder(queue, jobName)
+          .finalize();
+                    
 var post = (payload) => {
-  let job = queue.create(jobName, payload)
-                .save( function(err){
-                     if( !err ) console.log( job.id );
-                  });
-  return job;
+  // let job = queue.create(jobName, payload)
+  //               .save( function(err){
+  //                    if( !err ) console.log( job.id );
+  //                 });
+  // return job;
+
+  jb.add(payload)
+  .run( (err, job) => {
+    if(err) console.log(err.message);
+    else console.log(job.id);
+  })
 }
 
 // execute payload from file

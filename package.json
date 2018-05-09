@@ -1,21 +1,34 @@
 {
   "name": "kueman",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "CLI client to post job(s) in `Kue` priority queue",
   "main": "index.js",
+  "engines": {
+    "node": ">= 8"
+  },
   "bin": {
-    "kueman": "index.js"
+    "kueman": "./bin/kueman.js"
   },
   "keywords": [
     "Kue",
-    "Test",
-    "Client",
-    "CLI"
+    "test",
+    "producer",
+    "client",
+    "cli"
   ],
-  "author": "Sourav Ray",
+  "author": {
+    "name": "Sourav Ray",
+    "email": "me@raysourav.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:souravray/kueman.git"
+  },
   "license": "MIT",
   "dependencies": {
+    "chalk": "^2.4.1",
     "commander": "^2.15.1",
-    "kue": "^0.11.6"
+    "kue": "^0.11.6",
+    "lokijs": "^1.5.3"
   }
 }
