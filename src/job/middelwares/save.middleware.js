@@ -1,3 +1,5 @@
+"use strict";
+
 function save() {
   return (next, err, job) => {
     if(err) return next(err);
