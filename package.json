@@ -6,11 +6,14 @@
   "engines": {
     "node": ">= 8"
   },
+  "scripts": {
+    "test": "mocha"
+  },
   "bin": {
-    "kueman": "./bin/kueman.js"
+    "kueman": "./index.js"
   },
   "keywords": [
-    "Kue",
+    "kue",
     "test",
     "producer",
     "client",
@@ -22,13 +25,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:souravray/kueman.git"
+    "url": "git+https://github.com/souravray/kueman.git"
   },
+  "bugs": {
+    "url": "https://github.com/souravray/kueman/issues"
+  },
+  "homepage": "https://github.com/souravray/kueman#readme",
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.15.1",
     "kue": "^0.11.6",
     "lokijs": "^1.5.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1"
   }
 }
