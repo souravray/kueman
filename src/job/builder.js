@@ -1,6 +1,6 @@
 "use strict";
 
-const { save } = require('./middelwares') 
+const { save } = require('./middlewares') 
 
 class JobBuilder {
   constructor(queue, jobName) {
