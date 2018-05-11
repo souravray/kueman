@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-const { save } = require('./middlewares') 
+const { save } = require('./middlewares'); 
 
 class JobBuilder {
   constructor(queue, jobName) {
@@ -16,11 +16,11 @@ class JobBuilder {
       if(!this.isFinalized) return next( Error('Builder is not finalized'));
 
       let payload = this.payloads.shift();
-      if(typeof payload === "undefined") return next( Error('No payload available'));
+      if(typeof payload === 'undefined') return next( Error('No payload available'));
 
       let job = this.queue.create(this.jobName, payload);
-      next(null, job)
-    })
+      next(null, job);
+    });
   }
   
   finalize() {
@@ -37,7 +37,7 @@ class JobBuilder {
 
   use(fn) {
     // once finalized no middileware can be added to the pipeline
-    if(this.isFinalized) return next( Error('Cannot add middlewares after finalize'));
+    if(this.isFinalized) throw Error('Cannot add middlewares after finalize');
 
     this.run = ( stack => next => 
       stack(fn.bind(this,next.bind(this)))

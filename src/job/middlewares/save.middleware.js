@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function save() {
   return (next, err, job) => {
@@ -9,8 +9,8 @@ function save() {
 
       // if no error return the job
       return next(null, job);
-    })
-  }
+    });
+  };
 }
 
 module.exports = save;
