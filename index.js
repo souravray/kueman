@@ -3,7 +3,7 @@
 const program = require('commander');
 const fs = require('fs');
 const kue  = require('kue');
-const { JobBuilder, sensors, save } = require('./src/job');
+const { JobBuilder, sensors } = require('./src/job');
 
 var assert = require('assert');
 assert.throws(
