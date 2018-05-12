@@ -29,8 +29,7 @@ module.exports = {
             { 
                 "allow": [
                     "log",
-                    "warn", 
-                    "error"
+                    "warn"
                 ] 
             }
         ]
